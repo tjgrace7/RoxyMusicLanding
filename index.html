@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roxy Music | Free Guitar Level Books</title>
+<meta name="description" content="Join the Roxy Music list and unlock your free guitar level book instantly.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <img src="img/roxy-logo.jpg" alt="Roxy Music logo">
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Unlock Your Free <span>Guitar Level Book</span></h1>
+    <p class="lede">Watch a quick intro below, then tell us your level to get instant access to your PDF book &mdash; straight to your inbox.</p>
+
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/cmsylcipc6E?si=RWkrXSkVmv6KnJpP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <a href="#signup" class="cta-button">Get My Free Book</a>
+  </div>
+</section>
+
+<section class="levels">
+  <div class="container">
+    <h2>Every Level, Covered</h2>
+    <ul class="level-chips">
+      <li class="level-chip level-Gold">Gold</li>
+      <li class="level-chip level-Green">Green</li>
+      <li class="level-chip level-Purple">Purple</li>
+      <li class="level-chip level-Blue">Blue</li>
+      <li class="level-chip level-Orange">Orange</li>
+      <li class="level-chip level-Red">Red</li>
+      <li class="level-chip level-Brown">Brown</li>
+      <li class="level-chip level-Black">Black</li>
+    </ul>
+  </div>
+</section>
+
+<section class="signup" id="signup">
+  <div class="container">
+    <h2>Join the List</h2>
+    <p class="sub">Fill this out and we'll send your level's book right away.</p>
+
+    <form id="signup-form" novalidate>
+      <div class="form-row">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+        </div>
+        <div>
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+      </div>
+
+      <div>
+        <label for="level">What Level Guitar Are You?</label>
+        <select id="level" name="level" required>
+          <option value="" disabled selected>Choose your level&hellip;</option>
+          <option value="Gold">Gold &mdash; Never Played Guitar</option>
+          <option value="Green">Green &mdash; Know Chords, Can't Play Songs</option>
+          <option value="Purple">Purple &mdash; Can't Play Barre Chords</option>
+          <option value="Blue">Blue &mdash; Want to Play Lead Guitar</option>
+          <option value="Orange">Orange &mdash; Tired of Pentatonic Scales</option>
+          <option value="Red">Red &mdash; Want to Play in More Keys</option>
+          <option value="Brown">Brown &mdash; Learning Sweep Picking</option>
+          <option value="Black">Black &mdash; Ready to Learn Modes</option>
+        </select>
+      </div>
+
+      <button type="submit" class="cta-button" id="submit-btn">Get My Free Book</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+      <p class="form-footer-note">By submitting, you agree to receive emails from Roxy Music. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    &copy; <span id="year"></span> Roxy Music. All rights reserved.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're On The List | Roxy Music</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <img src="img/roxy-logo.jpg" alt="Roxy Music logo">
+  </div>
+</header>
+
+<section class="thankyou-hero">
+  <div class="container">
+    <h1>You're On The List!</h1>
+    <p class="lede">Your book is on its way &mdash; check your inbox in the next few minutes.</p>
+  </div>
+</section>
+
+<div class="download-card" id="download-card">
+  <span class="badge" id="level-badge" style="display:none;"></span>
+  <h2 id="level-title">Watch your email</h2>
+  <p id="level-text">We're sending your guitar book to the email address you signed up with. If you don't see it in a few minutes, check spam.</p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    &copy; <span id="year"></span> Roxy Music. All rights reserved.
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const params = new URLSearchParams(window.location.search);
+const level = params.get('level');
+const badge = document.getElementById('level-badge');
+const title = document.getElementById('level-title');
+
+if (level) {
+  badge.textContent = level;
+  badge.classList.add('level-' + level);
+  badge.style.display = 'inline-block';
+  title.textContent = `${level} Guitar Book On The Way`;
+}
+</script>
+</body>
+</html>
