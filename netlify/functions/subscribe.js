@@ -6,14 +6,14 @@ const crypto = require('crypto');
 // Color level shown on the site -> exact GTRLEVEL dropdown choice text in Mailchimp.
 // These strings must match the Mailchimp merge field choices exactly (case/punctuation included).
 const LEVEL_TO_GTRLEVEL = {
-  Gold: "I've Never Played Guitar",
-  Green: "I Know Some Chords, But Can't Play Songs",
-  Purple: "I Can't Play Barre Chords",
+  Gold: "Never Played Guitar",
+  Green: "I Know Simple Chords But Not Songs",
+  Purple: "I Do Not Know Barre Chords",
   Blue: "I Wanna Play Lead Guitar",
-  Orange: "I'm Tired of Pentatonic Scales",
+  Orange: "I am Tired of Pentatonic Scales",
   Red: 'I Want to Play in More Keys',
   Brown: 'I want to learn about Sweep Picking',
-  Black: "I'm Ready to Learn About Modes"
+  Black: "Ready to Learn About Modes"
 };
 
 exports.handler = async (event) => {
